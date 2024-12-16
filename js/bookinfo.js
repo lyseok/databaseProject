@@ -30,6 +30,7 @@ function displayBookDetail() {
                 <dt class="detail-name">${bookDetail.title}</dt>
                 <dt class="detail-writer">${bookDetail.author}</dt>
                 <dd class="detail-price">${bookDetail.price}원</dd>
+                <dd class="detail-price">ISBN : ${bookDetail.isbn}</dd>
               </dl>
               <p class="detail-summary"></p>
             </div>
