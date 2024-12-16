@@ -80,6 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
       totalElement.textContent = "0 원";
 
       alert("모든 책이 대여되었습니다.");
+      // 페이지 새로고침
+      window.location.reload();
     } catch (error) {
       console.error("오류 발생:", error);
       alert(`오류 발생: ${error.message}`);
