@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <!-- RESET CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/my-page.css">
+  <link rel="stylesheet" href="./css/header.css">
+
+  <script defer src="./js/header.js"></script>
+  
+</head>
+<body>
+  <!-- header -->
+  <header data-include-path="header.html"></header>
+
+  <!-- My Page Content -->
+  <div class="container">
+
+    <section class="profile">
+      <h2>Profile Information</h2>
+      <p><strong>Username:</strong> <span id="profile-username"></span></p>
+      <p><strong>Email:</strong> <span id="profile-email"></span></p>
+      <p><strong>Joined:</strong> <span id="profile-join-date"></span></p>
+    </section>
+
+    <section class="order-history">
+      <h2>Order History</h2>
+      <ul id="order-list">
+        <!-- Orders will be dynamically loaded here -->
+      </ul>
+    </section>
+
+    <section class="edit-profile">
+      <h2>Edit Profile</h2>
+      <form id="edit-profile-form">
+        <label for="edit-username">Username:</label>
+        <input type="text" id="edit-username" name="username">
+
+        <label for="edit-email">Email:</label>
+        <input type="email" id="edit-email" name="email">
+
+        <button type="submit" class="submit-btn">Save Changes</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="./js/my-page.js"></script>
+</body>
+</html>

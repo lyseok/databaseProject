@@ -1,0 +1,147 @@
+/* Basic clearfix to contain floats */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header .innerWrapper {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+header h2, h4 {
+  font-family: 'Abril Fatface', serif;
+}
+
+header h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 100px;
+  margin: 0 0 30px 0;
+}
+
+/* NAV SECTION */
+
+.companyName {
+  padding: 18px 10px 20px 15%;
+  margin: 0;
+  float: left;
+  color: #000;
+  width: 45%;
+  background: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: left;
+  font-variant: small-caps;
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+  width: 55%;
+  float: right;
+}
+
+header nav ul {
+  float: right;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border-right: 20px solid #fff;
+}
+
+header nav ul li {
+  float: left;
+  margin: 0;
+  display: inline;
+  width: 20%;
+  text-align: center;
+  background: #fff;
+}
+
+header nav ul li:hover {
+  background: none;
+  font-style: bold;
+  transform: scale(1.2);
+}
+
+header nav ul li a {
+  text-decoration: none;
+  padding: 25px 20px;
+  color: #000;
+  margin: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+}
+
+header nav ul li a:focus {
+  outline: none;
+}
+
+/* HEAD SECTION */
+
+header {
+  background-size: cover;
+  background-attachment: fixed;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Ensure it overlays other content */
+}
+
+.hero {
+  text-align: center;
+  text-shadow: 1px 0 2px #595859;
+}
+
+.hero h1 {
+  font-size: 5.5rem;
+  margin:0;
+  padding-top: 200px;
+  font-family: 'Abril Fatface', serif;
+  color: #fff;
+}
+
+.hero h3 {
+  padding-bottom: 250px;
+  font-family: 'Quicksand', sans-serif;
+  font-style: italic;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (max-width:900px) {
+  .companyName {
+      width: 100%;
+      text-align: center;
+      padding: 4% 4%;
+  }
+  
+  .mainNav {
+      width: 100%;
+  }
+  
+  header nav ul {
+      border: none;
+  }
+  
+  header nav ul li a {
+      padding: 25px 2%;
+  }
+}

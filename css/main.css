@@ -1,0 +1,270 @@
+html {
+  --color-white: #FFF;
+  --color-black: #000;
+  --color-font: #1D1D1D;
+  --color-font-darkgray: #6E6E6E;
+  --color-font-lightgray: #F5F5F5;
+  --color-link: #0071E3;
+  --color-link-focus: #81B9F1;
+  --color-border: #D2D2D2;
+  --color-header: #001524;
+  --color-section: #cdd7db;
+  --color-shadow: rgba(0, 0, 0, .4);
+  --color-bgleft: #96B6C5;
+}
+
+
+/* Inner */
+.inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  margin-top: 66px;
+}
+
+/* NOTICE */
+.notice .notice-line {
+  position: relative;
+}
+.notice a {
+  text-decoration: none;
+  color:var(--color-font);
+}
+.notice .notice-line .bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--color-bgleft);
+}
+.notice .notice-line .bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #cdd7db;
+}
+.notice .notice-line .inner{
+  height: 62px;
+  display: flex;
+}
+.notice .notice-line .inner__left{
+  width: 60%;
+  height: 100%;
+  background-color: var(--color-bgleft);
+  display: flex;
+  align-items: center;
+}
+.notice .notice-line .inner__left h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.notice .notice-line .inner__left .swiper-container {
+  height: 62px;
+  flex-grow: 1;
+}
+.notice .notice-line .inner__left .swiper-slide {
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+.notice .notice-line .inner__left .swiper-slide a {
+  color: #fff;
+  font-size: 17px;
+}
+.notice .notice-line .inner__left .notice-line__more {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notice .notice-line .inner__left .notice-line__more .material-icons {
+  color: #fff;
+  font-size: 30px;
+}
+.notice .notice-line .inner__right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.notice .notice-line .inner__right h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+.notice .notice-line .inner__right .toggle-promotion {
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notice .notice-line .inner__right .toggle-promotion .material-icons {
+  font-size: 30px;
+}
+.notice .promotion {
+  height: 693px;
+  background-color: var(--color-section);
+  position: relative;
+  transition: height .4s;
+  overflow: hidden;
+}
+.notice .promotion.hide {
+  height: 0;
+}
+.notice .promotion .swiper-container {
+  width: calc(819px * 3 + 20px);
+  height: 553px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: calc((819px * 3 + 20px) / -2);
+}
+.notice .promotion .swiper-slide {
+  opacity: .5;
+  transition: opacity 1s ;
+
+  display: flex; /* 자식 요소를 중앙 정렬 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+}
+
+.notice .promotion .swiper-slide img {
+  width: 100%; /* 가로로 컨테이너에 맞춤 */
+  height: auto; /* 이미지 비율 유지 */
+  object-fit: cover; /* 이미지가 영역을 가득 채우도록 조정 */
+  max-height: 100%; /* 컨테이너 높이를 넘지 않도록 설정 */
+}
+
+.notice .promotion .swiper-slide-active {
+  opacity: 1;
+}
+.notice .promotion .swiper-slide .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.notice .promotion .swiper-pagination {
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+.notice .promotion .swiper-pagination-bullet {
+  background-color: transparent;
+  background-image: url("../images/promotion_slide_pager.png");
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  outline: none;
+}
+.notice .promotion .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+.notice .promotion .swiper-pagination-bullet-active {
+  background-image: url("../images/promotion_slide_pager_on.png");
+}
+.notice .promotion .swiper-prev,
+.notice .promotion .swiper-next {
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--color-bgleft);
+  border-radius: 50%;
+  position: absolute;
+  top: 300px;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+}
+.notice .promotion .swiper-prev {
+  left: 50%;
+  margin-left: -480px;
+}
+.notice .promotion .swiper-next {
+  right: 50%;
+  margin-right: -480px;
+}
+.notice .promotion .swiper-prev:hover,
+.notice .promotion .swiper-next:hover {
+  background-color: var(--color-bgleft);
+  color: #fff;
+}
+
+/* products */
+
+.container h3{
+  font-size: 24px;
+  color: #545454;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+  
+}
+.product-list{
+  width: 735px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product{
+  width: 225px;
+  text-align: center;
+  display: block;
+  color: #545454;
+  text-decoration: none;
+  float: left;
+  margin-left:10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+.product:hover {
+  transform: scale(1.05); /* 호버 시 약간 확대 */
+}
+.product img{
+  margin-bottom: 20px;
+  display: block; /* 이미지를 블록 요소로 설정 */
+  margin: 0 auto; /* 가운데 정렬 */
+  width: 100%; /* 이미지의 너비를 부모 요소에 맞춤 */
+  max-width: 225px; /* 최대 너비를 제한 */
+  height: 225px; /* 고정된 높이 */
+  object-fit: contain; /* 이미지를 영역 안에 맞춤 */
+}
+
+.product-name{
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.product-price{
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; 
+  background-color: #cdd7db;
+}
+.footer a{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}

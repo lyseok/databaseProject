@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management (HNU)</title>
+
+  <!-- RESET CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+
+  <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/header.css">
+
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+
+  <script defer type="module" src="./js/header.js"></script>
+  <script defer type="module" src="./js/main.js"></script>
+
+
+</head>
+<body>
+  <!-- header -->
+  <header data-include-path="header.html"></header>
+
+
+  <section class="notice">
+
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+
+        <div class="inner__left">
+          <h2>급상승도서</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="javascript:void(0)">우리는 사랑 안에 살고 있다 · 유혜주 · 21세기북스</a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)">슬픔의 모양 · 이석원 · 김영사</a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)">트럼프 2.0 시대 · 박종훈 · 글로퍼스</a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)">일의 감각 · 조수용 · REFERENCE BY B</a></div>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="notice-line__more"><div class="material-icons">add_circle</div></a>
+        </div>
+        <div class="inner__right">
+          <h2>이벤트</h2>
+          <div class="toggle-promotion">
+            <div class="material-icons">upload</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="promotion">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/main_promo_1.png" alt="" />
+            <!-- <a href="javascript:void(0)" class="btn">자세히 보기</a> -->
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/main_promo_2.png" alt="" />
+            <!-- <a href="javascript:void(0)" class="btn">자세히 보기</a> -->
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/main_promo_3.png" alt="" />
+            <!-- <a href="javascript:void(0)" class="btn">자세히 보기</a> -->
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/main_promo_4.png" alt="" />
+            <!-- <a href="javascript:void(0)" class="btn">자세히 보기</a> -->
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/main_promo_5.png" alt="" />
+            <!-- <a href="javascript:void(0)" class="btn">자세히 보기</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-prev">
+        <div class="material-icons">arrow_back</div>
+      </div>
+      <div class="swiper-next">
+        <div class="material-icons">arrow_forward</div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="container">
+    
+    <div class="product-list">
+      <div class="results" id="results"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="search-bar">
+      <input type="text" id="query" placeholder="">
+      <!-- <button onclick="searchBooks()">Search</button> -->
+    </div>
+  </div>
+
+
+</body>
+</html>
