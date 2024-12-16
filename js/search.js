@@ -120,7 +120,7 @@ if (savedResults && query) {
   }
 };
 
-// 페이지 로드시 자동 호출
-document.addEventListener('DOMContentLoaded', () => {
-  searchBooks(); // 초기 검색 함수 호출
-});
+// // 페이지 로드시 자동 호출
+// document.addEventListener('DOMContentLoaded', () => {
+//   searchBooks(); // 초기 검색 함수 호출
+// });

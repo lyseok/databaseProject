@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
             loginBtn.addEventListener('click', () => {
               // 로그아웃 로직
               localStorage.removeItem('user_data'); // 사용자 데이터 삭제
+              localStorage.removeItem('access_token'); // 액세스 토큰 삭제
+              localStorage.removeItem('token_type'); // 토큰 타입 삭제
               alert(`${userData.name}님, 로그아웃되었습니다.`);
               window.location.reload(); // 페이지 새로고침
             });
