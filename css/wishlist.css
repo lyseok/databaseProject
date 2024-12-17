@@ -302,3 +302,16 @@ body {
 .added {
 	margin: 0 -50px 0 0 !important;
 }
+
+.return-btn {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.return-btn:hover {
+  background-color: #d32f2f;
+}

@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
     }
 
-    // 장바구니 데이터 가져오기
+    // 대여목록 데이터 가져오기
     const rentallistResponse = await fetch("http://43.203.22.130:8000/rental-list", {
       method: "POST",
       headers: {
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const rentalListElement = document.getElementById("rental-list");
 
     if (rentallistItems.length === 0) {
-      rentalListElement.innerHTML = "<li>장바구니가 비어 있습니다.</li>";
+      rentalListElement.innerHTML = "<li>대여목록이 비어 있습니다.</li>";
     } else {
       rentallistItems.forEach((item) => {
         const listItem = document.createElement("li");
